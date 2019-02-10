@@ -1,84 +1,75 @@
 <!DOCTYPE html>
-<html lang= en>
-  <head>
-    <link type="text/css" rel="stylesheet"
-    href="Job-Description.css" media="screen">
-      <meta charset=utf-8>
-      <title>Bridge</title>
-      <script>
-      function inputFocus(i) {
-        if (i.value == i.defaultValue) { i.value = ""; i.style.color = "#000"; }
-      }
-      function inputBlur(i) {
-        if (i.value == "") { i.value = i.defaultValue; i.style.color = "#888"; }
-      }
-      </script>
+<html>
+<head>
+  <link href="Job-Description.css" rel="stylesheet">
+  <title>Job Description</title>
+</head>
+<body>
 
-  </head>
-  <body>
-   <nav>
-      <a id="logo" href="#">Bridge</a>
-      <a href="#">Jobs</a>
-      <a href="#">Your Skills</a>
-      <a href="#">Resources</a>
-      <a href="#">About</a>
-    </nav>
-    <div class="box">
-    <article class="box1">
+  <nav>
+        <a id="logo" href="#">Bridge</a>
+        <a href="#">Jobs</a>
+        <a href="#">Your Skills</a>
+        <a href="#">Resources</a>
+        <a href="#">About</a>
+      </nav>
+  <article>
+    <img class="google"src="https://www.iosicongallery.com/icons/google-2015-10-22/512.png" width="100" style="border:5px solid black ">
+    <h2>Google</h2>
+    <h4>Technical Solutions Consultant</h4>
+    <h2>Job Description</h2>
     <p>
-    <h2>Found your dream job, but don't know what they're looking for?<br></h2>
+    This application is intended for candidates that are eligible for full-time authorization in the United States upon completing their education. 
+    If you do not meet this requirement, please consider applying for international opportunities. 
+    Please check for opportunities in the office where you are eligible for full-time authorization.
+    </p>
+    <p>
+    <h4>Note:
+    <br>
+    By applying to this position your application is automatically submitted to the following locations:
+    <br>
+    Mountain View, CA, USA; New York, NY, USA; Boulder, CO, USA</h4>
+    </p>
 
-    <h3>Enter the url of that job you want:
-    <input type = "text"
-          id = "url"
-          style="color:#888;"
-          value = "Enter url"
-          onfocus="inputFocus(this)"
-          onblur="inputBlur(this)" /><br>
-    </h3>
-    <button type="button"><a href="Job-Description.html">Submit</a></button>
-   </p>
+    <h2>Qualifications</h2>
+    <h4>Minimum Qualifications:</h4>
+    <p>
+    <ul>
+        <li>BS degree in Computer Science or related software engineering field.</li>
+        <li>Experience working with client-side web technologies: HTML, CSS, JavaScript, and/or HTTP protocols.</li>
+        <li>Software development experience with one or more general purpose programming languages, including but not limited to: Java, C++, or Python.</li>
+        <li>Ability to travel as required to meet with specific partner and client stakeholders (varies by specific team).</li>
+    </ul>
+    </p>
+    <h4>Preferred Qualifications:</h4>
+    <p>
+    <ul>
+        <li>Experience communicating product and technical concepts to technical and non-technical audiences.</li>
+        <li>Problem solving, analytical, and troubleshooting skills.</li>
+        <li>Demonstrated knowledge of SQL/MySQL or Unix/Linux operating systems and commands.</li>
+        <li>Ability to facilitate development and communication of solutions to technical and business stakeholders, with effective listening, critical thinking and problem solving skills.</li>
+        <li>Ability to collaborate, build consensus, deliver, and drive technical decisions with various sized customer stakeholder groups.</li>
+    </ul>
+    </p>
+
+     <h2>Responsibility</h2>
+     <p>
+     <ul>
+        <li>Analyze and resolve complex technical problems and roadblocks around data and tools.</li>
+        <li>Identify opportunities to optimize and automate workflows.</li>
+        <li>Work closely with Product Managers and Software Engineers to improve Google’s tools and products.</li>
+        <li> Collaborate with gTech, Consumer, and Engineering teams to write code and implement tools to improve troubleshooting efficiency and the end user experience</li>
+        <li>Collaborate and communicate effectively with others as well as manage stakeholder expectations in order to solve technical problems and provide technical guidance</li>
+    </ul>
+    </p>
+    <p>
+        Want to compare your resume to the job description?
+    </p>
+    <button>Compare</button>
+    <p>If you have not uploaded your resume <a href="#">click here</a>.</p>
 </article>
-  <article class="or">
-        <h2>OR</h2>
-  </article>
-   <article class="box2">
-
-   <p >
-
-    <h2>Still don't know which job you want? Don't worry!</h2>
-
-    <h3>Connect to your LinkedIn or upload resume</h3><br>
-    <div>
-    <img class="linkedin" src="https://neilpatel-qvjnwj7eutn3.netdna-ssl.com/wp-content/uploads/2017/05/LinkedIn.jpg" width="40" height="40">
-    <span class="linktext">LinkedIn</span>
-    <span class="upload">
-        <input type="resume" placeholder="Upload resume">
-        <button type="button"><a href="Resume-Evaluator.html">Upload</a></button>
-    </span>
-    </div>
-  </div>
-    <!--Skills:<input type = "text"
-          id = "skills"
-          style="color:#888;"
-          value = "text here"
-          onfocus="inputFocus(this)"
-          onblur="inputBlur(this)" /><br>
-    Interests:<input type = "text"
-          id = "interests"
-          style="color:#888;"
-          value = "text here"
-          onfocus="inputFocus(this)"
-          onblur="inputBlur(this)" /><br>
-    Degree:<input type = "text"
-          id = "degree"
-          style="color:#888;"
-          value = "text here"
-          onfocus="inputFocus(this)"
-          onblur="inputBlur(this)"  /><br>
-
-    <br><button type="button"><a href="#">Submit</a></button>-->
- </p>
-</article>
+  <script>
+    $("button").on("click", function(){alert("Clicked!")})
+  </script>
 </body>
 </html>
