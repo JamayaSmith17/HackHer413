@@ -5,6 +5,14 @@
     href="initial.css" media="screen">
       <meta charset=utf-8>
       <title>Bridge</title>
+      <script>
+      function inputFocus(i) {
+        if (i.value == i.defaultValue) { i.value = ""; i.style.color = "#000"; }
+      }
+      function inputBlur(i) {
+        if (i.value == "") { i.value = i.defaultValue; i.style.color = "#888"; }
+      }
+      </script>
 
   </head>
   <body>
@@ -18,9 +26,12 @@
     <h3>Enter the url of that job you want:
     <input type = "text"
           id = "url"
-          value = "Enter url" /><br>
+          style="color:#888;"
+          value = "Enter url"
+          onfocus="inputFocus(this)"
+          onblur="inputBlur(this)" /><br>
     </h3>
-    <button type="button">Submit</button>
+    <button type="button"><a href="Job-Description.html">Submit</a></button>
 
     <h2>OR</h2><br>
 
@@ -30,14 +41,24 @@
 
     Skills:<input type = "text"
           id = "skills"
-          value = "text here" /><br>
+          style="color:#888;"
+          value = "text here"
+          onfocus="inputFocus(this)"
+          onblur="inputBlur(this)" /><br>
     Interests:<input type = "text"
           id = "interests"
-          value = "text here" /><br>
+          style="color:#888;"
+          value = "text here"
+          onfocus="inputFocus(this)"
+          onblur="inputBlur(this)" /><br>
     Degree:<input type = "text"
           id = "degree"
-          value = "text here" /><br>
-    <br><button type="button">Submit</button>
+          style="color:#888;"
+          value = "text here"
+          onfocus="inputFocus(this)"
+          onblur="inputBlur(this)"  /><br>
+
+    <br><button type="button"><a href="#">Submit</a></button>
 
 
 </body>
